@@ -176,7 +176,7 @@ namespace MvcMovie.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        //Examine Details and Delete
         private bool MovieExists(int id)
         {
             return _context.Movie.Any(e => e.Id == id);
